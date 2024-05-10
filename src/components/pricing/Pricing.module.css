@@ -30,11 +30,17 @@
     box-shadow: 0px 15px 40px 0px rgba(217, 200, 193, 0.3);
     background: rgb(255, 255, 255);
     cursor: pointer;
-    transition: scale .3s ease-in-out;
-}
+    /* transition: scale .3s ease-in-out; */
+    animation: scale 1s ease alternate-reverse infinite;
+ }
+ @keyframes scale {
+    to {
+        transform: scale(1.1);
+    }
+ }
 .card:hover {
     z-index: 2;
-    scale: 1.2;
+    /* scale: 1.2; */
 }
 .card h4{
     color: rgb(36, 40, 81);
@@ -164,10 +170,18 @@ margin-bottom: 0;
     padding-top: 60px;
     padding-bottom: 60px;
     cursor: pointer;
-    transition: scale .3s ease-in-out;
+    /* transition: scale .3s ease-in-out; */
+    animation: scale 1s ease alternate-reverse infinite;
 }
+ @keyframes scale {
+    to {
+        transform: scale(1.1);
+       
+    }
+ }
 .cardMiddle:hover {
-    scale: 1.2;
+    /* scale: 1.2; */
+     z-index: 5;
 }
  .element1 {
   position: absolute;

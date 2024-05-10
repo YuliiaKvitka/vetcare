@@ -15,7 +15,7 @@ export const metadata = {
   title: "VetCare",
   description: "For Your Pet\’s Natural Life & Care",
   icons: {
-    icon: "/public/favicon/favicon.ico"
+    icon: "/public/favicon/favicon-16x16.png"
   }
 };
 

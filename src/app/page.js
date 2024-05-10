@@ -1,4 +1,5 @@
-import Care from "@/components/care/care";
+
+import Care from "@/components/care/Care";
 import Groomers from "@/components/groomers/Groomers";
 import Hero from "@/components/hero/Hero";
 import Pricing from "@/components/pricing/Pricing";
