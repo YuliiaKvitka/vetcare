@@ -1,0 +1,151 @@
+.section {
+  width: 1920px;
+  height: 990px;
+  /* margin: -60px auto 0; */
+  padding-top: 104px;
+}
+.wrapper {
+  padding-right: 101px;
+  padding-left: 210px;
+  width: 1604px;
+  height: 711px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 75px;
+  margin: 0 auto;
+}
+.contentLeft { 
+  padding-top: 74px;
+  width: 630px;  
+}
+.contentLeft span {
+  color: rgb(255, 119, 81);
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.heading {
+  color: rgb(36, 40, 81);
+  font-size: 58px;
+  line-height: 87px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 628px;
+}
+.text {
+  margin-top: 30px;
+  color: rgb(112, 114, 131);
+  font-family: Quicksand, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 630px;
+}
+.groupBtn {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+  /* margin-bottom: 73px; */
+}
+.btn {
+  width: 268px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0px 10px 25px 0px rgba(255, 124, 84, 0.3);
+  background: linear-gradient(180.00deg, rgb(255, 169, 146),rgb(255, 120, 82) 65%);
+}
+
+/* ------------- */
+
+
+/* components/BlurredImage.module.css */
+.contentRight {
+  position: relative; /* Для позиционирования внутри блока */
+  width: 685px;
+  height: 685px;
+  top: 51px;
+}
+
+.blurredBackground {
+  position: absolute; /* Фон находится в абсолютной позиции */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255, 219, 204); /* Цвет фона */
+  filter: blur(200px); /* Применение размытия */
+}
+
+.foregroundImage {
+  position: relative; /* Изображение на переднем плане */
+  z-index: 1; /* Устанавливает изображение поверх размытости */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Оптимизирует вид изображения */
+  left: 42px;
+  }
+
+.element1 {
+  position: absolute;
+  content: '';
+  bottom: 420px;
+  right: -60px;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0,0,0.1));
+}
+
+ .element2 {
+  position: absolute;
+  content: '';
+  bottom:0px;
+  right: -50px;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0,0,0.1));
+}
+.element3 {
+  position: absolute;
+  content: '';
+  bottom:0px;
+  left: -60px;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0,0,0.1));
+}
+.element4 {
+  position: absolute;
+  content: '';
+  top:-50px;
+  left: -900px;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0,0,0.1));
+} 
+/* ----------- */
+.customList {
+  margin-top: 25px;
+  list-style-type: none; /* Убираем стандартный маркер */
+  padding-left: 20px;   /* Добавляем отступ, чтобы маркер был виден */
+}
+.customList li {
+
+  display: flex; /* Используем flex для выравнивания */
+  align-items: center; /* Выравнивание по вертикали */
+  list-style-image: url('/images/custom-marker.png'); /* Кастомный маркер */
+  background-size: contain; /* Убедиться, что размер маркера подходит */
+  padding-left: 20px; /* Отступ слева */
+  margin-bottom: 10px; /* Отступ между элементами списка */
+
+}
+
+.customList li::before {
+  content: ''; /* Псевдоэлемент для маркера */
+  background-image: url('./../../../public/assets/services/mark@1x.png'); /* Изображение маркера */
+  background-size: contain; /* Размер маркера */
+  width: 20px; /* Ширина маркера */
+  height: 20px; /* Высота маркера */
+  display: inline-block; /* Отображение маркера */
+  margin-right: 10px; /* Отступ между маркером и текстом */
+}

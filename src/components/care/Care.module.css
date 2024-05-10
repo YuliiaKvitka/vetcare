@@ -1,0 +1,108 @@
+.section {
+    padding-top: 130px;
+    width: 1920px;
+    margin: 0 auto;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1490px;
+    height: 521px;
+    border-radius: 50px;
+    background: rgb(255, 236, 228);
+    display: flex;
+    gap: 169px;
+    
+    padding-left: 100px;
+}
+.columnLeft {
+    padding-top: 102px;
+}
+.heading {
+    color: rgb(0, 0, 0);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 87px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.text {
+    color: rgb(112, 114, 131);
+    font-family: Quicksand, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 630px;
+    margin-bottom: 50px;
+}
+.contentRight {
+    position: relative; /* Для позиционирования внутри блока */
+    width: 417px;
+    height: 417px;
+    top: 0;
+    padding-top: 54px;
+
+}
+
+.blurredBackground {
+    position: absolute; /* Фон находится в абсолютной позиции */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 205, 184); /* Цвет фона */
+    filter: blur(200px); /* Применение размытия */
+}
+
+.foregroundImage {
+    position: relative; /* Изображение на переднем плане */
+    z-index: 1; /* Устанавливает изображение поверх размытости */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Оптимизирует вид изображения */
+    left: 42px;
+}
+.btn {
+        margin-top: 50px;
+    width: 221px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 25px 0px rgba(255, 124, 84, 0.3);
+    background: linear-gradient(180.00deg, rgb(255, 169, 146),rgb(255, 120, 82) 65%);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.element1 {
+    position: absolute;
+    content: '';
+    top: 20px;
+    right: 0px;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0,0,0.1));
+}
+.element2 {
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 0px;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0,0,0.1));
+}
+.element3 {
+    position: absolute;
+    content: '';
+    top: 250px;
+    left: 0px;
+}
+.element4 {
+    position: absolute;
+    content: '';
+    top: -150px;
+    left: -950px;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0,0,0.1));
+}
